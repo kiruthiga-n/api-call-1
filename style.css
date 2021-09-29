@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+  }
+body {
+    margin: 0;
+    font-family: Arial;
+}
+.searchbar {
+    text-align: center;
+    padding: 32px;
+  }
+#myInput {
+    width: 48pc;
+    height: 2em;
+}
+/* #catlist {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50%,1fr));  
+} */
+
+#rowlist {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+#catlist {
+    flex: 25%;
+    padding: 0 4px;
+}
+#catlist img {
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+#rowlist:after {
+    content: "";
+    display: table;
+    clear: both;
+  }

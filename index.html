@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+            content="width=device-width, initial-scale=1.0" />
+    <title>Cats Images</title>
+    </head>
+    <body>
+    <div class="main">
+        <div class="searchbar">
+            <input id="myInput" >
+            <button id="myBtn" onclick="makeUL()">Search</button>
+            <div class="form-popup" id="myForm">
+                <form action="/action_page.php" class="form-container"> </form>
+              </div>
+        </div>
+        <div class="spinner-border" role="status" id="loading">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div id="rowlist">
+            <div id="catlist"></div>
+        </div> 
+    </div>
+     
+    <script src="./scripts.js"></script>
+</body>
+</html>
